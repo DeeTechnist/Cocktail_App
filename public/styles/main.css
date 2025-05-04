@@ -10,6 +10,7 @@ body {
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   color: whitesmoke;
+  font-size: 16px;
 }
 
 .cocktail-container {
@@ -27,6 +28,7 @@ body {
 .cocktail-image img {
   width: 100%;
   border-radius: 8px;
+  height: auto; /* Maintain aspect ratio */
 }
 
 .cocktail-details {
@@ -40,7 +42,7 @@ body {
 
 .cocktail-name {
     font-family: 'Lobster', cursive;
-  font-size: 24px;
+  font-size: 2rem;
   font-weight: bold;
   margin: 20px 0;
   text-align: center;
@@ -50,4 +52,27 @@ body {
   text-align: center; 
   margin-top: 20px; 
   color: whitesmoke;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Slightly smaller font for mobile */
+  }
+  .cocktail-container {
+    grid-template-columns: 1fr; /* Stack items vertically */
+    padding: 10px;
+  }
+
+  .cocktail-image img {
+    width: 100%; /* Ensure the image scales properly */
+  }
+
+  .cocktail-name {
+    font-size: 28px; /* Adjust font size for smaller screens */
+  }
+
+  .cocktail-details {
+    text-align: left; /* Align text for better readability */
+  }
 }
