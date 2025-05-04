@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cocktail App</title>
+  <link rel="stylesheet" href="/styles/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cocktail-name"><h1><%= cocktail.name %></h1></div>
+  <div class="cocktail-container">
+    <div class="cocktail-image">
+      <img src="<%= cocktail.image %>" alt="<%= cocktail.name %>">
+    </div>
+    <div class="cocktail-details">
+        <p><strong>Alcoholic:</strong> <%= cocktail.alcoholic %></p>
+      <p><strong>Ingredients:</strong> <%= cocktail.ingredients %></p>
+      <p><strong>Instructions:</strong> <%= cocktail.instructions %></p>
+    </div>
+  </div>
+</body>
+<footer
+  <p>&copy; <%= new Date().getFullYear() %> DMJCodes. All rights reserved.</p>
+</footer>
+</html>
